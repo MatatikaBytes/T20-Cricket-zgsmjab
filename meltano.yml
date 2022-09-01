@@ -1,6 +1,13 @@
 version: 1
 default_environment: dev
 project_id: 97e96ee7-ef17-49de-b763-1378ec5c337a
+plugins:
+  extractors:
+  - name: tap-spreadsheets-anywhere
+    pip_url: git+https://github.com/ets/tap-spreadsheets-anywhere.git
+  files:
+  - name: files-dbt
+    pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.0
 environments:
 - name: dev
 - name: staging
